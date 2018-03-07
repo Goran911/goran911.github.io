@@ -1,3 +1,6 @@
+<?php
+include "config.php";
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -10,15 +13,16 @@
 	</head>
 	<body>
 		<nav>
-				<a href="#" id="ikonicameni"></a>
-			<ul>
-				<li><a href="index.html">Početak</a></li>
-				<li><a href="omeni.html">O meni</a></li>
-				<li><a href="galerija.html">Galerija</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>			
-			</ul>
-		</nav>
-		<h1>O meni</h1>
+        <a href="#" id="ikonicameni"></a>
+      <ul>
+        <li><a href="index.php"><?php echo $lang['home'] ?></a></li>
+        <li><a href="about.php"><?php echo $lang['about'] ?></a></li>
+        <li><a href="skills.php"><?php echo $lang['skills'] ?></a></li>
+        <li><a href="gallery.php"><?php echo $lang['gallery'] ?></a></li>
+        <li><a href="contact.php"><?php echo $lang['contact'] ?></a></li>      
+      </ul>
+    </nav>
+		<h1><?php echo $lang['titlea'] ?></h1>
 
 		<section><img id="itali" src="slike/4.jpg" alt="itali"/></section>
 			<section><p class="omeni">Rođen sam 25. juna 1991. godine u Loznici. Osnovnu školu "Vera Blagojević" završio sam u Banji Koviljači. Srednju tehničku školu, smer građevinski tehničar za visokogradnju završio sam u Loznici.

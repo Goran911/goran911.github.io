@@ -30,6 +30,9 @@
     font-family: Pecita;
     src: url(../font/Pecita.otf);
 }
+
+
+  
 html,body{
 	height:100%;
 	margin:0;
@@ -506,3 +509,8 @@ a {
   cursor: pointer;
   text-decoration: none;
   display: inline-block; }
+
+
+.languageT {
+	color: white;
+}

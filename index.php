@@ -1,3 +1,6 @@
+<?php
+include "config.php";
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -6,19 +9,27 @@
 		<link rel="stylesheet" type="text/css" href="css/css.css">
 		<link rel="shortcut icon" type="image/png" href="slike/loznica-grb.png"/>
 		<meta name="keyword" content="goran jankovic, web programiranje">
-		
 	</head>
+  <header>
+    
+      <nav>
+        <a href="#" id="ikonicameni"></a>
+      <ul>
+        <li><a href="index.php"><?php echo $lang['home'] ?></a></li>
+        <li><a href="about.php"><?php echo $lang['about'] ?></a></li>
+        <li><a href="skills.php"><?php echo $lang['skills'] ?></a></li>
+        <li><a href="gallery.php"><?php echo $lang['gallery'] ?></a></li>
+        <li><a href="contact.php"><?php echo $lang['contact'] ?></a></li>      
+      </ul>
+      <ul>
+        <li><a title="English" class="languageT" href="index.php?lang=en"><img src="img/english.png" width="30px" height="17px"><?php echo $lang['lang_en'] ?></a></li>
+        <li><a title="Serbian" class="languageT" href="index.php?lang=sr"><img src="img/serbian.jpg" width="30px" height="17px"><?php echo $lang['lang_sr'] ?></a></li>
+      </ul>
+    </nav>
+    </header>
 	<body>
-		<nav>
-				<a href="#" id="ikonicameni"></a>
-			<ul>
-				<li><a href="index.html">Početak</a></li>
-				<li><a href="omeni.html">O meni</a></li>
-				<li><a href="galerija.html">Galerija</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>			
-			</ul>
-		</nav>
-		<h1>Dobrodošli</h1>
+		    
+		<h1><?php echo $lang['title'] ?></h1>
 					<h2 title="Click me"
 					  class="center"
 					  id="modalBtn">
@@ -26,7 +37,8 @@
 					</h2>
 					
 		<br>
-		<p class="citat">“Nema velike ljubavi bez velike radosti, ali i bez velike patnje. E, to vam je Crvena zvezda. Ima da se raduješ do neba, ali sekiracija ti ne gine.” -Ljuba Tadić</p>
+		<p class="citat">
+      <?php echo $lang['quote'] ?> </p>
 		<div class="gif"><img src="slike/gif/gif.gif" alt="gif">
 		</div>
 
@@ -66,6 +78,8 @@
             </p>
             
           </div>
+
+
         </footer>
 
 

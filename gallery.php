@@ -1,3 +1,6 @@
+<?php
+include "config.php";
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,15 +18,16 @@
 <body>
 
 		<nav>
-				<a href="#" id="ikonicameni"></a>
-			<ul>
-				<li><a href="index.html">Početak</a></li>
-				<li><a href="omeni.html">O meni</a></li>
-				<li><a href="galerija.html">Galerija</a></li>
-				<li><a href="kontakt.html">Kontakt</a></li>			
-			</ul>
-		</nav>
-		<h1>Galerija</h1>
+        <a href="#" id="ikonicameni"></a>
+      <ul>
+        <li><a href="index.php"><?php echo $lang['home'] ?></a></li>
+        <li><a href="about.php"><?php echo $lang['about'] ?></a></li>
+        <li><a href="skills.php"><?php echo $lang['skills'] ?></a></li>
+        <li><a href="gallery.php"><?php echo $lang['gallery'] ?></a></li>
+        <li><a href="contact.php"><?php echo $lang['contact'] ?></a></li>      
+      </ul>
+    </nav>
+		<h1><?php echo $lang['titleg'] ?></h1>
 
 <div class="demo-wrapper">
 
